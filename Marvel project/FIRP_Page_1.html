@@ -1,0 +1,207 @@
+<!Doctype html>
+<html>
+
+<head>
+  <style>
+ /* Style the navigation bar */
+      body{
+background-image: url("marvelLogo.jpg");
+          background-size: 1300px 720px;
+          background-color: #0d0d0d;
+          color: white;
+          margin: 0;}
+
+ /* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #0d0d0d;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #4CAF50;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #272727;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #4CAF50;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+} 
+</style>
+<script>
+
+  var i = 0;
+
+    function goToFramePhase(num)
+    {
+
+      if(num==0)
+        {
+            if(i==0)
+                    document.body.setAttribute("style","background-image: url(ironman.jpg); background-repeat: no-repeat; background-size: 1300px 720px;");
+            if(i==1)
+                    document.body.setAttribute("style","background-image: url(hulk.jpg); background-repeat: no-repeat; background-size: 1300px 720px;");
+            if(i==2)
+                    document.body.setAttribute("style","background-image: url(ironman2.jpg); background-repeat: no-repeat; background-size: 1300px 720px;");
+            if(i==3)
+                    document.body.setAttribute("style","background-image: url(thor.jpg); background-repeat: no-repeat; background-size: 1300px 720px;");
+            if(i==4)
+                    document.body.setAttribute("style","background-image: url(captainamerica.jpg); background-repeat: no-repeat; background-size: 1300px 720px;");
+            if(i==5)
+                    document.body.setAttribute("style","background-image: url(avengers.jpg); background-repeat: no-repeat; background-size: 1300px 720px;");
+            if(i==6)
+                    document.body.setAttribute("style","background-image: url(ironman3.jpg); background-repeat: no-repeat; background-size: 1300px 720px;");
+            if(i==7)
+                    document.body.setAttribute("style","background-image: url(thor2.jpg); background-repeat: no-repeat; background-size: 1300px 720px;");
+            if(i==8)
+                    document.body.setAttribute("style","background-image: url(captainamerica2.jpg); background-repeat: no-repeat; background-size: 1300px 720px;");
+            if(i==9)
+                    document.body.setAttribute("style","background-image: url(guardiansofthegalaxy.jpg); background-repeat: no-repeat; background-size: 1300px 720px;");
+            if(i==10)
+                    document.body.setAttribute("style","background-image: url(avengers2.jpg); background-repeat: no-repeat; background-size: 1300px 720px;");
+            if(i==11)
+                    document.body.setAttribute("style","background-image: url(antman.jpg); background-repeat: no-repeat; background-size: 1300px 720px;");
+            if(i==12)
+                    document.body.setAttribute("style","background-image: url(captainamerica3.jpg); background-repeat: no-repeat; background-size: 1300px 720px;");
+            if(i==13)
+                    document.body.setAttribute("style","background-image: url(doctorstrange.jpg); background-repeat: no-repeat; background-size: 1300px 720px;");
+            if(i==13)
+                i=0;
+            else
+                i++;
+        }
+
+
+
+      if(num==1)
+        {
+        document.body.setAttribute("style","background-image: url(avengers.jpg); background-repeat: no-repeat; background-size: 1300px 720px;");
+        }
+      if(num==2)
+        document.body.setAttribute("style","background-image: url(avengers2.jpg); background-repeat: no-repeat; background-size: 1300px 720px;");
+      if(num==3)
+        document.body.setAttribute("style","background-image: url(captainamerica3.jpg); background-repeat: no-repeat; background-size: 1300px 720px;");
+      if(num==4)
+        document.body.setAttribute("style","background-image: url(marvelLogo.jpg); background-repeat: no-repeat; background-size: 1300px 720px;");
+    }
+</script>
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+
+  <a class="active" href="#" onmouseover=goToFramePhase(0)> Home</a>
+
+  <div class="dropdown">
+    <button class="dropbtn" onmouseover=goToFramePhase(1)>Phase1
+    </button>
+    <div class="dropdown-content">
+      <a href="FIRP_Page_2.html#im" target="_blank">Iron Man</a>
+      <a href="FIRP_Page_2.html#h" target="_blank">The Incredible Hulk</a>
+      <a href="FIRP_Page_2.html#im2" target="_blank">Iron Man2 </a>
+      <a href="FIRP_Page_2.html#t" target="_blank">Thor </a>
+      <a href="FIRP_Page_2.html#ca" target="_blank">Captain America </a>
+      <a href="FIRP_Page_2.html#a" target="_blank">The Avengers </a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn" onmouseover=goToFramePhase(2)>Phase2
+    </button>
+    <div class="dropdown-content">
+      <a href="FIRP_Page_3.html#im3" target="_blank">Iron Man 3</a>
+      <a href="FIRP_Page_3.html#t2" target="_blank">Thor 2</a>
+      <a href="FIRP_Page_3.html#ca2" target="_blank">Captain America 2 </a>
+      <a href="FIRP_Page_3.html#gotg" target="_blank">Guardians of the Galaxy</a>
+      <a href="FIRP_Page_3.html#a2" target="_blank">Avengers 2 </a>
+      <a href="FIRP_Page_3.html#am" target="_blank">Ant Man </a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn" onmouseover=goToFramePhase(3)>Phase3
+    </button>
+    <div class="dropdown-content">
+      <a href="FIRP_Page_4.html#ca3" target="_blank">Captain America 3</a>
+      <a href="FIRP_Page_4.html#ds" target="_blank">Doctor Strange</a>
+      <a href="FIRP_Page_4.html#gotg2" target="_blank">Guardians of the Galaxy 2 </a>
+      <a href="FIRP_Page_4.html#s" target="_blank">Spiderman </a>
+      <a href="FIRP_Page_4.html#t3" target="_blank">Thor 3 </a>
+      <a href="FIRP_Page_4.html#bp" target="_blank">Black Panther </a>
+      <a href="FIRP_Page_4.html#a3" target="_blank">Avengers 3 </a>
+      <a href="FIRP_Page_4.html#am2" target="_blank">Ant Man 2 </a>
+      <a href="FIRP_Page_4.html#cm" target="_blank">Captain Marvel </a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn" onmouseover=goToFramePhase(4)>Phase4
+    </button>
+    <div class="dropdown-content">
+      <a href="FIRP_Page_5.html" target="_blank">Spider Man 2</a>
+
+    </div>
+  </div>
+
+  <a href="login.html" target="_blank"> Buy</a>
+
+
+</div> 
+
+</body>
+</html>

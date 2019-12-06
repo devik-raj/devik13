@@ -1,0 +1,76 @@
+<!Doctype html>
+<html>
+
+<head>
+	<style>
+		.xx{ width:50%; }
+
+		.subheading
+		{
+		font-size: 50px;
+	          color: red;
+	          background-color: yellow;
+	          border-width: 10px;
+	          border-style: double;
+	          border-color: black;
+		      }
+
+		.ss
+		{
+		font-size: 30px;
+	          color: black;
+	          background-color: yellow;
+	          border-width: 10px;
+	          border-style: solid;
+	          border-color: black;
+		      }
+
+		body
+		{
+		background-color: brown;
+	          color:blue;
+   		      }
+
+	</style>
+
+	<script>
+		function abc()
+		{ 
+		   var emailValue=document.getElementById("ss").value;
+		   var emailR= /[a-zA-Z]+[.|_]?@+[a-zA-Z]+(.com)$/;
+
+		   if( emailValue.match(emailR) )
+			window.open("buy.html", "_self");
+		   else
+			window.alert("Please enter a valid Email and Password");
+		}
+	</script>
+
+</head>
+
+<body>
+    <center>
+	<fieldset class="xx">
+		<legend><h3 class="subheading">LOGIN</h3></legend>
+		<table>
+			<tr>
+				<td>EMAIL: </td><td><input type="text" id="ss"></td>
+			</tr>
+
+			<tr>
+				<td><br></td>
+			</tr>
+
+			<tr>
+				<td>PASSWORD: </td><td><input type="password" id="aa"></td>
+			</tr>
+		</table>
+
+		<br><br>
+		<h2> <input type="submit" value="login" onclick=abc()> </h2>
+
+	</fieldset>
+    </center>
+</body>
+
+</html>

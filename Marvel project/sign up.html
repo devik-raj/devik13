@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+<style>
+
+.subheading
+{
+	font-size: 50px;
+          color: black;
+          background-color: yellow;
+          border-width: 10px;
+          border-style: solid;
+          border-color: black;
+      }
+
+  body
+{	
+	background-color: brown;
+          color: white;
+      }
+
+.ss
+{
+	font-size: 30px;
+          color: black;
+          background-color: yellow;
+          border-width: 10px;
+          border-style: solid;
+          border-color: black;
+      }
+
+.xx
+{	 width:50%; 	}
+
+</style>
+<script>
+
+function abc()
+{  
+   
+   var p=document.getElementById("q").value;
+   var b=/^[a-zA-Z]+$/;
+
+   if(p.match(b))
+  {  
+     window.alert("success");
+   }
+   else
+    {
+       window.alert("not success");  
+
+                                      }
+   var t=document.getElementById("o").value;
+   var a=/[0-9]+[a-z]+[0-9]+$/;
+
+   if(t.match(a))
+  {  
+     window.alert("success");
+   }
+   else
+    {
+       window.alert("not success");  
+
+                                      }
+  var w=document.getElementById("y").value;
+   var c=/[0-9a-zA-Z]/;
+
+   if(w.match(c))
+  {  
+     window.alert("success");
+   }
+   else
+    {
+       window.alert("not success");  
+
+                                      }
+   var s=document.getElementById("k").value;
+   var d=/^[0-9]+$/;
+
+   if(s.match(d))
+  {  
+     window.alert("success");
+   }
+   else
+    {
+       window.alert("not success");  
+
+                                      }
+   var r=document.getElementById("g").value;
+   var i=/[a-zA-Z]+(.|_)[A-Za-z]+@[a-zA-Z]+.com$/;
+
+
+   if(r.match(i))
+  {  
+     window.alert("success");
+   }
+   else
+    {
+       window.alert("not success");  
+
+                                      }
+   var x=document.getElementById("v").value;
+   var f=/([a-z]+[A-Z]+[0-9]+[$@#&*!^]+)?/;
+
+
+   if(x.match(f))
+  {  
+     window.alert("success");
+   }
+   else
+    {
+       window.alert("not success");  
+
+                                      }
+
+}
+</script>
+</head>
+<body>
+<center>
+<fieldset class="xx">
+<legend><h1 class="subheading">SIGN UP</h1></legend>
+<table>
+<tr>
+<td>NAME:-</td><td><input type="text" id="q"></td>
+</tr>
+<tr>
+<td><br></td>
+</tr>
+<tr>
+<td>DATE OF BIRTH:-</td><td><input type="text" id="o"></td>
+</tr>
+<tr>
+<td><br></td>
+</tr>
+<tr>
+<td>ADDRESS:-</td><td><input type="text" id="y"></td>
+</tr>
+<tr>
+<td><br></td>
+</tr>
+<tr>
+<td>PHONE NO:-</td><td><input type="text" id="k"></td>
+</tr>
+<tr>
+<td><br></td>
+</tr>
+<tr>
+<td>EMAIL ID:-</td><td><input type="text" id="g"></td>
+</tr>
+<tr>
+<td><br></td>
+</tr>
+<tr>
+<td>PASSWORD:-</td><td><input type="text" id="v"></td>
+</tr>
+</table>
+<br><br>
+          <input type="submit" value="register" class="ss" onclick="abc()">
+</center>
+</fieldset>
+</body>
+</html>
